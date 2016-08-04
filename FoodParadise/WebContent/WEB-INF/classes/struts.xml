@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <package name="foodparadise" extends="struts-default">
+   
+      <action name="loginaction" 
+         class="com.foodparadise.LoginAction"
+         method="execute">
+         <result name="success">/index.jsp</result>
+         <result name="error">/error.jsp</result>
+      </action>
+      <action name="logoutaction" 
+         class="com.foodparadise.LogoutAction"
+         method="execute">
+         <result name="success">/index.jsp</result>
+         <result name="error">/error.jsp</result>
+      </action>
+      <action name="signupaction" 
+         class="com.foodparadise.SignupAction"
+         method="execute">
+         <result name="success">/index.jsp</result>
+         <result name="error">/signup.jsp</result>
+      </action>
+      <action name="searchaction" 
+         class="com.foodparadise.SearchAction"
+         method="execute">
+         <result name="success">/searchsuccess.jsp</result>
+         <result name="error">/error.jsp</result>
+      </action>
+      <action name="checkinaction" 
+         class="com.foodparadise.CheckinAction"
+         method="execute">
+         <result name="success">/checkinsuccess.jsp</result>
+         <result name="error">/error.jsp</result>
+      </action>
+      <action name="attendaction" 
+         class="com.foodparadise.AttendAction"
+         method="execute">
+         <result name="success">/attendsuccess.jsp</result>
+         <result name="error">/attenderror.jsp</result>
+      </action>
+      <action name="friendaction" 
+         class="com.foodparadise.FriendAction"
+         method="execute">
+         <result name="success">/friendsuccess.jsp</result>
+         <result name="error">/frienderror.jsp</result>
+      </action>
+      <action name="unfriendaction" 
+         class="com.foodparadise.UnfriendAction"
+         method="execute">
+         <result name="success">/unfriendsuccess.jsp</result>
+         <result name="error">/unfrienderror.jsp</result>
+      </action>
+      <action name="reviewaction" 
+         class="com.foodparadise.ReviewAction"
+         method="execute">
+         <result name="success">/reviewedit.jsp</result>
+         <result name="error">/reviewediterror.jsp</result>
+      </action>
+      <action name="revieweditaction" 
+         class="com.foodparadise.ReviewEditAction"
+         method="execute">
+         <result name="success">/revieweditsuccess.jsp</result>
+         <result name="error">/revieweditwrong.jsp</result>
+      </action>
+      <action name="managepageaction" 
+         class="com.foodparadise.ManagePageAction"
+         method="execute">
+         <result name="success">/managesuccess.jsp</result>
+         <result name="error">/index.jsp</result>
+      </action>
+      <action name="advancedfriendaction" 
+         class="com.foodparadise.AdvancedFriendAction"
+         method="execute">
+         <result name="success">/advancedfriendsuccess.jsp</result>
+         <result name="error">/index.jsp</result>
+      </action>
+      <action name="advancedfoodaction" 
+         class="com.foodparadise.AdvancedFoodAction"
+         method="execute">
+         <result name="success">/advancedfoodsuccess.jsp</result>
+         <result name="error">/index.jsp</result>
+      </action>
+   
+   </package>
+
+</struts>

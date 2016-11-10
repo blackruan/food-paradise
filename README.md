@@ -11,10 +11,10 @@ This is the class project of CS564 Database Management Systems. The main goal of
 * Search: users can search restaurants by the food they like.
 
 ## How we built it
-We built this web application using JSP technology with Apache Struts2 framework.
+We built this web application using Java with Apache Struts2 framework.
 
 * Frontend: develop responsive design using Bootstrap framework.
 * Backend
     - deploy our system on Apache Tomcat server
     - database: MySQL
-* Data: obtain data of more than 20,000 restaurants from [Yelp Dataset Challenge](https://www.yelp.com/dataset_challenge).
+* Data: obtain data of more than 1,000 restaurants in Madison from [Yelp Dataset Challenge](https://www.yelp.com/dataset_challenge).
